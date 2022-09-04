@@ -25,19 +25,19 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
         return obb;
       });
 
-     console.log(grabAllNames)
+   //  console.log(grabAllNames)
      fs.writeFileSync(`MSME1.json`, JSON.stringify(grabAllNames));
-     fs.writeFileSync(`MSME1.csv`, JSON.stringify(grabAllNames));
+   //  fs.writeFileSync(`MSME1.csv`, JSON.stringify(grabAllNames));
 
  
      
   async function getText2(i){
   await   page.click(`[data-ci-pagination-page="${i+1}"]`,{delay : 1000});
-          console.log(i);
+       //   console.log(i);
   }
   async function getText(i){
     await   page.click(`[data-ci-pagination-page="${i+1}"]`,{delay : 5000});
-            console.log(i);
+         //   console.log(i);
     }
 
   await getText2(1);
@@ -55,9 +55,9 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames2)
+//  console.log(grabAllNames2)
   fs.writeFileSync(`MSME2.json`, JSON.stringify(grabAllNames2));
-  fs.writeFileSync(`MSME2.csv`, JSON.stringify(grabAllNames));
+//  fs.writeFileSync(`MSME2.csv`, JSON.stringify(grabAllNames2));
 
 
 
@@ -77,9 +77,9 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames3)
+ // console.log(grabAllNames3)
   fs.writeFileSync(`MSME3.json`, JSON.stringify(grabAllNames3));
-  fs.writeFileSync(`MSME3.csv`, JSON.stringify(grabAllNames));
+//  fs.writeFileSync(`MSME3.csv`, JSON.stringify(grabAllNames3));
 
 
 
@@ -101,9 +101,9 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames4)
+ // console.log(grabAllNames4)
   fs.writeFileSync(`MSME4.json`, JSON.stringify(grabAllNames4));
-  fs.writeFileSync(`MSME4.csv`, JSON.stringify(grabAllNames));
+//  fs.writeFileSync(`MSME4.csv`, JSON.stringify(grabAllNames4));
 
 
 
@@ -124,9 +124,9 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames5)
+//  console.log(grabAllNames5)
   fs.writeFileSync(`MSME5.json`, JSON.stringify(grabAllNames5));
-  fs.writeFileSync(`MSME5.csv`, JSON.stringify(grabAllNames));
+//  fs.writeFileSync(`MSME5.csv`, JSON.stringify(grabAllNames5));
 
 
 
@@ -148,9 +148,9 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames6)
+//  console.log(grabAllNames6)
   fs.writeFileSync(`MSME6.json`, JSON.stringify(grabAllNames6));
-  fs.writeFileSync(`MSME6.csv`, JSON.stringify(grabAllNames));
+//  fs.writeFileSync(`MSME6.csv`, JSON.stringify(grabAllNames6));
 
 
 
@@ -171,11 +171,11 @@ const url = 'https://www.msmemart.com/msme/listings/company-list/advertising-mat
   });
 
 
-  console.log(grabAllNames7)
+//  console.log(grabAllNames7)
   fs.writeFileSync(`MSME7.json`, JSON.stringify(grabAllNames7));
-  fs.writeFileSync(`MSME7.csv`, JSON.stringify(grabAllNames7));
+//  fs.writeFileSync(`MSME7.csv`, JSON.stringify(grabAllNames7));
 
-
+await browser.close();
 
 })();
 
