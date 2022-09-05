@@ -1,6 +1,5 @@
 const puppeteer = require("puppeteer");
 const fs = require("fs");
-const { get } = require("http");
 
 (async function scrape() {
 
